@@ -6,13 +6,13 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header"></header>
+        <main>
+          <Dictionary defaultKeyword="excited" />
+        </main>
+        <footer className="App-footer">
+          This project was coded by Kelly Granados and is open-sourced on GitHub
+        </footer>
       </div>
-      <main>
-        <Dictionary />
-      </main>
-      <footer className="text-center">
-        This project was coded by Kelly Granados and is open-sourced on GitHub
-      </footer>
     </div>
   );
 }
