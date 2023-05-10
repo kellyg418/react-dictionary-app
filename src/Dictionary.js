@@ -22,7 +22,7 @@ export default function Dictionary(props) {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
-    let shecodesApiKey = " tf3af8fe40boeff366fbea30e0d4a794";
+    let shecodesApiKey = "tf3af8fe40boeff366fbea30e0d4a794";
     let shecodesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${shecodesApiKey}`;
     let headers = { Authorization: `Bearer ${shecodesApiKey}` };
     axios
